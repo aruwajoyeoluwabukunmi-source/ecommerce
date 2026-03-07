@@ -8,57 +8,41 @@ class Loginpage extends StatelessWidget {
     return  Scaffold(
       appBar: AppBar(
  leading: IconButton(
+  color: Color(0xff2d6cdf),
   icon:Icon(Icons.arrow_back) ,
   onPressed:() => Navigator.pop(context),
  ) ,       
 centerTitle: true,
         title: Text("@kummy01",
 style:TextStyle(
-  color:Colors.green,
+  color:Color(0xff999999),
   fontSize: 20.0,
   fontStyle:FontStyle.italic,
-  fontWeight: FontWeight.normal,
+  fontWeight: FontWeight.w800,
   letterSpacing: 0,
   
 ),
 
         ),
         actions: [
+             Icon(Icons.share,
+            color: Color(0xff2d6cdf),
+            size: 25.0,
+            ),
           IconButton(
             icon: Icon(Icons.settings),
+            color: Color(0xff2d6cdf),
             onPressed: () { print("setting tapped");
  
             } ,
            ),
-          //           IconButton(
-          //   icon: Icon(Icons.share),
-          //   onPressed: () {
-          //     // Navigator.push(
-          //     //   context,
-          //     //   MaterialPageRoute(builder: (context) => Secondscreen(),
-          //     //   ),
-          //     // );
-          //    } ,
-          //   color: Colors.red,
-          //  ),
-            Icon(Icons.share,
-            color: Colors.black,
-            size: 25.0,
-            ),
-           //Text("settings"),
-            // Text("@kummy01",
-            // style:TextStyle(
-            // color:Colors.red,
-            // fontSize: 15.0,
-            // fontStyle:FontStyle.italic),
-            // )
 
-            
+  
         ],
-               backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+              //  backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body: Container(
-        color: Colors.brown,
+        color: Colors.white,
         height: double.infinity,
         width:  double.infinity,
 
